@@ -5,7 +5,7 @@
 
 A Ruby BigQuery client.
 
-**This is a WIP project. Currently only #insert is available.**
+**This is a WIP project. Currently #insert, #query are available.**
 
 ```ruby
 client = RbBigQuery::Client.new YAML.load_file "config/bigquery.yml"
