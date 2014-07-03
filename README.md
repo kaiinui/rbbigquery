@@ -1,6 +1,8 @@
 [WIP]rbbigquery
 ===
 
+[![Gem Version](https://badge.fury.io/rb/rbbigquery.svg)](http://badge.fury.io/rb/rbbigquery)
+
 A Ruby BigQuery client.
 
 This is a WIP project.
@@ -18,7 +20,7 @@ table = client.find_or_create_table("test_dataset", "test4_table", schema)
 
 rows = (1..5).map do |i|
   {
-      screen_name: "title: #{i}",
+      title: "title: #{i}",
       text: "text: #{i}"
   }
 end
@@ -26,6 +28,7 @@ end
 puts table.insert(rows)
 ```
 
+then touch `config/bigquery.yml` as following where auhentication info are available at Google Developer console -> APIs & AUTH -> Credentials.
 ```
 :application_name: YOUR_APPLICATION_NAME
 :application_version: YOUR_APPLICATION_VERSION
