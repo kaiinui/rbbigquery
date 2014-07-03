@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version     = '0.0.1'
   s.date        = '2014-07-03'
   s.summary     = "[WIP] Ruby BigQuery client."
-  s.description = "Provides a easier way to handle BigQuery with Ruby."
+  s.description = "[WIP ]Provides a easier way to handle BigQuery with Ruby."
   s.authors     = ["Kai Inui"]
   s.email       = 'me@kaiinui.com'
   s.files       = ["lib/rbbigquery.rb", "lib/rbbigquery/client.rb", "lib/rbbigquery/table.rb", "lib/rbbigquery/schema.rb"]

@@ -1,4 +1,4 @@
-require_relative 'lib/rbbigquery'
+require 'rbbigquery'
 require 'yaml'
 
 schema = RbBigQuery::Schema.build do
