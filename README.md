@@ -1,11 +1,11 @@
-[WIP]rbbigquery
+rbbigquery
 ===
 
 [![Gem Version](https://badge.fury.io/rb/rbbigquery.svg)](http://badge.fury.io/rb/rbbigquery)
 
 A Ruby BigQuery client.
 
-**This is a WIP project. Currently #insert, #query are available.**
+**This is a WIP project. Currently `#insert`, `#query` are available.**
 
 ```ruby
 client = RbBigQuery::Client.new YAML.load_file "config/bigquery.yml"
@@ -26,6 +26,7 @@ end
 
 puts table.insert(rows)
 ```
+(You have to create dataset before execute `#find_or_create_table` now.)
 
 then touch `config/bigquery.yml` as following where auhentication info are available at Google Developer console -> APIs & AUTH -> Credentials.
 ```ruby
