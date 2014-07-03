@@ -11,7 +11,12 @@ module RbBigQuery
       create
     end
 
-    # @return row response json
+    # @return [String] GQL style table name. (dataset.table_id)
+    def sql_name
+      "#{@dataset}.#{@table_id}"
+    end
+
+    # @return [Hash] row response json
     def create
       response = @client.client.execute({
          :api_method => @client.bq.tables.insert,
@@ -36,11 +41,9 @@ module RbBigQuery
 
     # insert rows
     # @param rows [Array<Hash>] [{#{column_name}=>value}]
-    # @return row response json
+    # @return [Hash] row response json
     def insert(rows)
-      rows = rows.map do |row|
-        {'json' => row}
-      end
+      rows = rows.map { |row| {'json' => row} }
 
       response = @client.client.execute({
          :api_method => @client.bq.tabledata.insert_all,
