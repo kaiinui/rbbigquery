@@ -20,7 +20,7 @@ table = client.find_or_create_table("test_dataset", "test4_table", schema)
 
 rows = (1..5).map do |i|
   {
-      screen_name: "title: #{i}",
+      title: "title: #{i}",
       text: "text: #{i}"
   }
 end
