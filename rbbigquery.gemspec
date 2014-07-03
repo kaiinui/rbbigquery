@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'rbbigquery'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2014-07-03'
   s.summary     = "[WIP] Ruby BigQuery client."
   s.description = "[WIP ]Provides a easier way to handle BigQuery with Ruby."
