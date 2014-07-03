@@ -36,6 +36,18 @@ then touch `config/bigquery.yml` as following where auhentication info are avail
 :project_id: YOUR_PROJECT_ID # find in Google dashboard
 ```
 
+Querying?
+---
+
+```ruby
+client = ..
+table = ..
+
+client.query("SELECT * FROM #{table.sql_name}")
+```
+
+I'm planning to connect SQL builder so that you don't have to write painfully SQL queries.
+
 Where can I get my keys?
 ---
 
