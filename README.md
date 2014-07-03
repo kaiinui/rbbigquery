@@ -45,6 +45,11 @@ You can find `:key_path` and `:service_email` as following.
 
 You can find `project_id` in top page of the dashboard(which PROJECT are listed). See column 'PROJECT ID'.
 
+TODO
+---
+
+1. Write tests. (**There's no test now. Be careful.**)
+
 Licence
 ---
 
