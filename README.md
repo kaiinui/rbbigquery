@@ -63,7 +63,7 @@ TODO
 
 1. Write tests. (**There's no test now. Be careful.**)
 
-Licence
+License
 ---
 
 Copyright (c) 2013 Kai Inui, Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
