@@ -47,7 +47,7 @@ table = ..
 client.query("SELECT * FROM #{table.sql_name}")
 ```
 
-I'm planning to connect SQL builder so that you don't have to write painfully SQL queries.
+**I'm planning to connect SQL builder so that you don't have to write painfully SQL queries.**
 
 Where can I get my keys?
 ---
